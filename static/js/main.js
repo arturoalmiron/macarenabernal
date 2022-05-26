@@ -78,6 +78,17 @@ openNav = () => {
     hamb.classList.toggle('active')
 }
 
+document.getElementsByClassName('bx bxl-instagram-alt')[0].onclick = function(){
+    openInNewTab('https://www.instagram.com/macabernal_/')
+ }
+
+ function openInNewTab(href) {
+    Object.assign(document.createElement('a'), {
+      target: '_blank',
+      href: href,
+    }).click();
+  }
+
 // let hambBtn = document.querySelector('.hamburger-btn')
 
 // let hamb = hambBtn.querySelector('.hamburger')
